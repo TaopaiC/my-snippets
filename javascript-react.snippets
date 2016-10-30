@@ -1,0 +1,31 @@
+snippet react_component "React PureComponent"
+import  React, { PureComponent, PropTypes } from 'react';
+
+class ${1:`!v vim_snippets#Filename('$1', 'title')`} extends PureComponent {
+  static propTypes = {
+  };
+
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return null;
+  }
+}
+
+export default $1;
+endsnippet
+
+snippet react_function_component "React Function Component"
+import React, { PropTypes } from 'react';
+
+function ${1:ClassName} {
+  return null;
+}
+
+$1.propTypes = {
+};
+
+export default $1;
+endsnippet
