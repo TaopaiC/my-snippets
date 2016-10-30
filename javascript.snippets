@@ -1,5 +1,13 @@
+snippet import "Import"
+import $1 from ${VISUAL};
+endsnippet
+
+snippet import_react "Import React"
+import React${1:, { PropTypes, ${2:PureComponent} }} from 'react';
+endsnippet
+
 snippet react_component "React PureComponent"
-import  React, { PureComponent, PropTypes } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 
 class ${1:`!v vim_snippets#Filename('$1', 'title')`} extends PureComponent {
   static propTypes = {
